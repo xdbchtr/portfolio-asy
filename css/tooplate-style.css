@@ -105,14 +105,15 @@ b, strong {
 }
 .custom-btn:hover {
   color: #ffc200;
+  background: #5F6F52;
 }
 .custom-btn.custom-btn-bg {
   background: #A9B388;
   color: black;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
-  color: #ffffff !important;
+  background: #FEFAE0;
+  color: #B99470 !important;
 }
 
 .animated {
