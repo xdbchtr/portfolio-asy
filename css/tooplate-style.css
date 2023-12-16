@@ -337,6 +337,10 @@ b, strong {
 .dark-mode .color-mode {
   color: #ffffff;
 }
+
+.dark-mode h6 {
+  color: white;
+}
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
@@ -364,7 +368,7 @@ b, strong {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #5F6F52;
   border-radius: 100%;
   position: absolute;
   width: 75px;
@@ -372,6 +376,19 @@ b, strong {
   line-height: 75px;
   text-align: center;
 }
+
+.timeline-yr.university {
+  background: url('../images/logo-uns-biru.png') center/cover; /* Replace with the path to your image */
+}
+
+.timeline-info h6 {
+  color: black;
+}
+
+.dark-mode .timeline-info h6 {
+  color: #ffffff;
+}
+
 .timeline-yr span {
   color: #ffffff;
   font-size: 16px;
@@ -386,6 +403,7 @@ b, strong {
   max-width: 432px;
   margin-left: 6em;
 }
+
 .timeline-info small {
   color: #474559;
   font-size: 16px;
@@ -475,13 +493,27 @@ b, strong {
 }
 
 .contact-info {
-  background: #474559;
+  background: #B99470;
   border-radius: 0 0 3px 3px;
   position: relative;
   bottom: 8px;
 }
 .contact-info p, .contact-info a {
   color: #f7f3f3;
+}
+
+.get-in-touch {
+  /* background: #B99470; */
+  border-radius: 0 0 3px 3px;
+  position: relative;
+  bottom: 8px;
+}
+.get-in-touch p, .get-in-touch a {
+  color: black;
+}
+
+.social-links {
+  margin-top: 25px;
 }
 
 .social-links .uil {
@@ -492,6 +524,62 @@ b, strong {
 }
 .social-links .uil:hover {
   color: #ffc200;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center along the X-axis */
+  align-items: center; /* Center along the Y-axis */
+}
+
+.get-in-touch .social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: blue;
+}
+
+.get-in-touch .social-links .uil {
+  color: black;
+  font-size: 60px;
+  display: block;
+}
+
+.get-in-touch .social-links .uil:hover {
+  color: #ffc200;
+}
+
+.get-in-touch .social-links .item {
+  margin-right: 10px;
+}
+
+.get-in-touch .social-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 20px;
+  height: 100%;
+  font-size: 60px;
+  justify-content: center; /* Center along the X-axis */
+  align-items: center; /* Center along the Y-axis */
+}
+
+.test {
+  background: url('../images/hijab.png') center/cover;
+  display: flex;
+  width: 230px;
+  height: 230px;
+  min-width: 230px;
+  min-height: 230px;
+}
+
+.bold {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: black;
 }
 
 @media (min-width: 1270px) {
@@ -519,6 +607,10 @@ b, strong {
   }
 
   .contact-info {
+    padding: 0 2rem;
+  }
+  
+  .get-in-touch {
     padding: 0 2rem;
   }
 }
@@ -589,6 +681,10 @@ b, strong {
   }
 
   .contact-info {
+    flex-direction: column;
+  }
+  
+  .get-in-touch {
     flex-direction: column;
   }
 
